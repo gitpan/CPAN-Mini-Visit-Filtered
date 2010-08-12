@@ -5,7 +5,17 @@ WriteMakefile
           'NAME' => 'CPAN::Mini::Visit::Filtered',
           'VERSION_FROM' => 'lib/CPAN/Mini/Visit/Filtered.pm',
           'PREREQ_PM' => {
+                           'Archive::Extract' => 0,
+                           'CPAN::DistnameInfo' => 0,
+                           'Carp' => 0,
+                           'Cwd' => 0,
+                           'File::Find::Rule' => 0,
+                           'File::Spec' => 0,
+                           'File::Temp' => 0,
                            'Moose' => '0',
+                           'Moose::Util::TypeConstraints' => 0,
+                           'MooseX::Declare' => 0,
+                           'MooseX::StrictConstructor' => 0,
                            'Test::More' => 0
                          },
           'INSTALLDIRS' => 'site',
