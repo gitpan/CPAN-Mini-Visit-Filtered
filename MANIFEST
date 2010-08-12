@@ -1,0 +1,19 @@
+Build.PL
+examples/who-uses-moosex-app-cmd.pl
+lib/CPAN/Mini/Visit/Filtered.pm
+Makefile.PL
+MANIFEST			This list of files
+META.yml
+pm-extract-minicpan-metas.v1
+README
+t/010-load.t
+t/020-main.t
+t/cpan/authors/id/A/AC/ACALPINI/Acme-CPANAuthors-Italian-0.01.tar.gz
+t/cpan/authors/id/A/AC/ACALPINI/CHECKSUMS
+t/cpan/authors/id/A/AC/ACALPINI/Lingua-IT-Conjugate-0.50.tar.bz2
+t/cpan/authors/id/A/AC/ACALPINI/Lingua-IT-Hyphenate-0.14.zip
+t/cpan/authors/id/A/AC/ACALPINI/Lingua-Stem-It-0.02.tgz
+t/cpan/authors/id/A/AC/ACME/CHECKSUMS
+t/cpan/authors/id/A/AC/ACME/MojoX-UserAgent-0.21.tar.gz
+xt/pod-coverage.t
+xt/pod.t

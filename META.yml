@@ -1,0 +1,23 @@
+---
+abstract: 'visit unpacked distributions in a filtered CPAN::Mini mirror'
+author: []
+build_requires:
+  Test::More: 0
+configure_requires:
+  Module::Build: 0
+generated_by: 'Module::Build version 0.3607'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: CPAN-Mini-Visit-Filtered
+provides:
+  CPAN::Mini::Visit::Filtered:
+    file: lib/CPAN/Mini/Visit/Filtered.pm
+    version: 0.01_01
+requires:
+  Moose: 0
+resources:
+  license: http://dev.perl.org/licenses/
+  repository: http://github.com/briang/CPAN-Mini-Visit-Filtered
+version: 0.01_01

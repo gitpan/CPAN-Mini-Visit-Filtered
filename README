@@ -1,0 +1,77 @@
+NAME
+    CPAN::Mini::Visit::Filtered - visit unpacked distributions in a filtered
+    CPAN::Mini mirror
+
+SYNOPSIS
+        my $visitor = CPAN::Mini::Visit::Filtered->new(
+            action => sub {
+                # XXX put something here
+            },
+            filter => sub { /briang/i },
+        );
+
+        $visitor->visit_distributions;
+
+DESCRIPTION XXX
+RATIONALE XXX
+CONSTRUCTOR
+    new() returns a new CPAN::Mini::Visit::Filtered object. Parameters to
+    new() should be supplied as key=>value pairs. The following attributes
+    are recognised.
+
+ATTRIBUTES
+    Attributes of the CPAN::Mini::Visit::Filtered class are all read-only:
+    they can be set only when constructing an object. They all have getters,
+    however, that can be used at any time, though its doubtful that you'll
+    need to.
+
+    CPAN::Mini::Visit::Filtered objects have the following attributes:
+
+  action
+    Once the archive has been unpacked, the coderef stored in action will be
+    called. The subroutine will be passed a CPAN::DistnameInfo object.
+
+    This parameter is mandatory.
+
+  archive_types
+    This is a regular expression that matches valid archives. The default
+    value matches "*.tar.gz", "*.tgz", "*.tar.bz2" and "*.zip".
+
+  cpan_base
+    This is the base directory where the CPAN::Mini mirror is stored. It
+    defaults to using the directory defined in your .minicpanrc file.
+
+  filter
+    This coderef is called before any archive is unpacked. The intention is
+    that this callback is used to filter out distributions you have no
+    interest in.
+
+    The subroutine will be passed a CPAN::DistnameInfo object and $_ will be
+    set to the full path and filename of the file as stored in the
+    CPAN::Mini mirror. The function should return a true value if you wish
+    this archive to be processed further.
+
+    By default all archives will be included. (With the possible exception
+    of Acme::*. See include_acme.)
+
+  include_acme
+    Set this parameter to a true value if you wish to process the modules
+    from the Acme::* namespace. Traditionally, these modules are all
+    "jokes", and you may not wish to process them
+
+    By default, the Acme distributions will not be included.
+
+  unpack_dir
+    The directory where the distributions will be unpacked.
+
+    By default, a temporary directory (as determined by File::Temp::tempdir)
+    will be allocated for you, and will be deleted when no longer required.
+
+METHODS
+  distinfo
+  find_archives
+  visit_distributions
+SEE ALSO
+AUTHOR
+BUGS
+COPYRIGHT & LICENSE
