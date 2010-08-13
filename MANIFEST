@@ -4,8 +4,10 @@ lib/CPAN/Mini/Visit/Filtered.pm
 Makefile.PL
 MANIFEST			This list of files
 META.yml
+pm-extract-minicpan-metas.v1
 README
 t/010-load.t
+t/015-cpan-mini.t
 t/020-main.t
 t/cpan/authors/id/A/AC/ACALPINI/Acme-CPANAuthors-Italian-0.01.tar.gz
 t/cpan/authors/id/A/AC/ACALPINI/CHECKSUMS

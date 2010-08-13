@@ -38,8 +38,9 @@ ATTRIBUTES
     value matches "*.tar.gz", "*.tgz", "*.tar.bz2" and "*.zip".
 
   cpan_base
-    This is the base directory where the CPAN::Mini mirror is stored. It
-    defaults to using the directory defined in your .minicpanrc file.
+    This is the base directory where the CPAN::Mini mirror is stored.
+
+    This paramater is mandatory
 
   filter
     This coderef is called before any archive is unpacked. The intention is

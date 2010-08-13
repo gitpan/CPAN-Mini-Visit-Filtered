@@ -24,10 +24,10 @@ name: CPAN-Mini-Visit-Filtered
 provides:
   CPAN::Mini::Visit::Filtered:
     file: lib/CPAN/Mini/Visit/Filtered.pm
-    version: 0.01_03
+    version: 0.01_05
 requires:
   Moose: 0
 resources:
   license: http://dev.perl.org/licenses/
   repository: http://github.com/briang/CPAN-Mini-Visit-Filtered
-version: 0.01_03
+version: 0.01_05
